@@ -63,3 +63,51 @@
   - 파라미터를 입력할 때, 변수처럼 입력하면 되며, 파라미터는 함수 내에서만 변수로 작동한다.
   
   - 만약 파라미터 값이 설정되지 않았을 때 기본값이 있게 하고싶다면, def say_hello(default_name="annonymous"): / 로 설정 가능하다(파라미터 옆에 등호를 넣어주면 됨.)
+
+2023.06.17
+
+# If Function
+: 조건을 나타내는 용어(조건문)
+
+예)
+   If 10 > 5:
+      print("correct")
+   If 7 == 7:
+      print("true")
+
+ 1. Else
+   - If function에서 조건에 해당하지 않는 나머지 경우에 사용.
+   (예: If의 결과 값이 True라면 False에 해당하는 값 입력)
+   - If와 Else 결과값은 다음 줄에 작성 시 들여써야함.
+
+2. Elif
+   - If 에서 2 개 이상의 결과를 출력할 때 사용하며, Else와 마찬가지로 If function 안에서 사용한다.
+   * If function 에서 순서:
+     If -> Elif -> Else
+
+* 두 수의 크기를 비교할 때 사용하는 기호
+   1) == : 같다.
+   2) >=, <= : ~ 보다 크거나 / 작거나 같다.
+   3) <, > : ~ 보다 크다 / 작다.
+   4) != : ~ 와 같지 않다.
+
+   - Input(): Consol에 주문을 입력할 수 있게 하는 함수.
+              (단 한개의 질문만 입력 가능함.)
+            - 질문이 입력되고 답이 올 때까지 기다리며 이 함수 또한 Print() 처럼 내장되어 있는 함수임.
+
+# And & Or
+1. And
+   : If 같은 조건문에서 두개 이상의 조건을 "동시에" 충족하는 값을 찾아야 할 때 사용.
+   -> 두개 이상의 조건을 모두 충족하는 값만 True, 아니라면 False 로 설정됨.
+   * And 값의 경우의 수
+   1) True and True : True
+   2) False and True / True and False : False
+   3) False and False : False
+
+2. Or
+   : If 같은 조건문에서 두개 이상의 조건을 "하나만" 충족하는 값을 찾아야 할 때 사용.
+   -> 하나라도 참이 된다면 True가 됨.
+   * Or 값의 경우의 수
+   1) True or True : True
+   2) True or False / False or True : True
+   3) False of False : False
