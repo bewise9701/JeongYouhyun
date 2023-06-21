@@ -111,3 +111,28 @@
    1) True or True : True
    2) True or False / False or True : True
    3) False of False : False
+
+2023.06.21
+# While 함수
+   : If와는 다른 형태의 조건문으로, 동작을 멈추게 하기 전까지 계속해서 움직임(루프기능을 가짐)
+   - 작동은 If와 같이 하며, 프로그램이 실행되는 시점부터 계속 결과를 출력함.
+   -> 그러므로 결과값이 조건에 부합하면(True) 실행되며, 조건에 부합하지 않으면(False) 출력을 멈추게 됨.
+
+# Method
+   : 일반적인 함수는 바로 입력하면 사용이 가능하지만 몇몇 함수들은 앞에 문자열이나 변수를 입력하고 뒤에 "."을 입력한 후 함수를 적어야 한다. 이를 Method 라고 부른다.
+     Method는 문자열 안에 수많은 기능이 있는 것을 알려주며, 데이터와 결합된 function이다.
+   - 자료의 형태에 따라서 다양한 method를 사용할 수 있다.
+예) name = "yu"
+    print(name.upper) = YU   * upper함수는 글자를 대문자로 다 바꾸는 Method임.
+
+# Return
+   : 정보를 돌려주는 역할
+예) def get_square(x):
+      return x*x
+   print(get_square(3) + get_square(4))
+   = print((3 * 3) + (4 * 4)) 
+   = 25
+
+   - 만약 return 함수를 사용했다면 그 이후 함수는 python에서 실행시키지 않음.
+   -> return 함수 사용 시 그 부분이 해당 함수의 마지막이 됨.
+   * return 함수는 프로그래밍에서 굉장히 중요한 역할을 수행하며, 개념을 이해하는데 어려우므로 최대한 많이 시도해볼것!
