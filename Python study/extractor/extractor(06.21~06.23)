@@ -1,0 +1,21 @@
+from extractor.indeed import extract_indeed_jobs
+from extractor.wwr import extract_wwr_jobs
+
+#키워드를 입력받기 위한 창
+keyword = input("What do you want to search for?")
+
+#입력한 후 코딩한 추출기를 이용하여 자료를 수집함.
+indeed = extract_indeed_jobs(keyword)
+wwr = extract_wwr_jobs(keyword)
+
+jobs = indeed + wwr
+
+#자료 수집이 완료된 후에는 키워드와 같은 이름의 .csv 파일을 만들어서 저장한다.
+#이때, 파일에 "," 나 이상하게 붙어있는 것들을 찾아서 추출기 안에서 다듬어지도록 해준다.
+file = open(f"{keyword}.csv","w")
+file.write("Position, Company, Location, URL\n")
+
+for job in jobs:
+    file.write(f"{job['position']},{job['company']},{job['location']},{job['link']}\n")
+
+file.close()
